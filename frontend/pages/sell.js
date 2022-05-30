@@ -1,7 +1,9 @@
-export default function SellPage() {
+const SellPage = () => {
   return (
     <div>
-      <p>Hello!</p>
+      <p>Hello Sell!</p>
     </div>
   );
-}
+};
+
+export default SellPage;

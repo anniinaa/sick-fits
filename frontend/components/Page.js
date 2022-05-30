@@ -1,7 +1,13 @@
-export default function Page() {
+import Header from './Header';
+
+const Page = ({ children }) => {
   return (
     <div>
-      <h2>I am t he page jjes</h2>
+      <Header />
+      <h2>I am the page vai mitä</h2>
+      {children}
     </div>
   );
-}
+};
+
+export default Page;

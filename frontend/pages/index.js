@@ -1,11 +1,9 @@
-import Page from '../components/Page';
-
-export default function IndexPage() {
+const IndexPage = () => {
   return (
     <div>
-      <Page>
-        <p>Hello!</p>
-      </Page>
+      <p>Hello !</p>
     </div>
   );
-}
+};
+
+export default IndexPage;
