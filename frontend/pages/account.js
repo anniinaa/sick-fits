@@ -1,9 +1,7 @@
-const AccountPage = () => {
+export default function OrderPage() {
   return (
     <div>
-      <p>Hello kukkuu!</p>
+      <p>Hello!</p>
     </div>
   );
-};
-
-export default AccountPage;
+}

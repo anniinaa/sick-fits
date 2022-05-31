@@ -1,5 +1,5 @@
+import PropTypes from 'prop-types';
 import styled, { createGlobalStyle } from 'styled-components';
-
 import Header from './Header';
 
 const GlobalStyles = createGlobalStyle`
@@ -48,14 +48,18 @@ const InnerStyles = styled.div`
   margin: 0 auto;
   padding: 2rem;
 `;
-const Page = ({ children }) => {
+
+export default function Page({ children, cool }) {
   return (
     <div>
       <GlobalStyles />
       <Header />
-      <InnerStyles> {children}</InnerStyles>
+      <InnerStyles>{children}</InnerStyles>
     </div>
   );
-};
+}
 
-export default Page;
+Page.propTypes = {
+  cool: PropTypes.string,
+  children: PropTypes.any,
+};

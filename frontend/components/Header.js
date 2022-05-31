@@ -3,10 +3,11 @@ import styled from 'styled-components';
 import Nav from './Nav';
 
 const Logo = styled.h1`
-  background: red;
   font-size: 4rem;
   margin-left: 2rem;
+  position: relative;
   z-index: 2;
+  background: red;
   transform: skew(-7deg);
   a {
     color: white;
@@ -24,6 +25,7 @@ const HeaderStyles = styled.header`
     justify-content: space-between;
     align-items: center;
   }
+
   .sub-bar {
     display: grid;
     grid-template-columns: 1fr auto;
@@ -31,7 +33,7 @@ const HeaderStyles = styled.header`
   }
 `;
 
-const Header = ({}) => {
+export default function Header() {
   return (
     <HeaderStyles>
       <div className="bar">
@@ -45,6 +47,4 @@ const Header = ({}) => {
       <Nav />
     </HeaderStyles>
   );
-};
-
-export default Header;
+}

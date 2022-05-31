@@ -1,9 +1,7 @@
-const IndexPage = () => {
+export default function IndexPage() {
   return (
     <div>
-      <p>Hello !</p>
+      <p>Hello!</p>
     </div>
   );
-};
-
-export default IndexPage;
+}
