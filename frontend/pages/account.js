@@ -1,4 +1,4 @@
-export default function OrderPage() {
+export default function AccontPage() {
   return (
     <div>
       <p>Hello!</p>
