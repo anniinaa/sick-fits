@@ -1,8 +1,16 @@
+/* eslint-disable no-undef */
+/* eslint-disable spaced-comment */
 import { useEffect, useState } from 'react';
 
 export default function useForm(initial = {}) {
   // create a state object for our inputs
   const [inputs, setInputs] = useState(initial);
+  const initialValue = Object.values(initial).join('');
+
+  useEffect(() => {
+    //this function runs when things we are watching changes
+    setInputs(initial);
+  }, [initialValue]);
 
   function handleChange(e) {
     let { value, name, type } = e.target;
